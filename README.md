@@ -1,6 +1,11 @@
+![New Relic](./notebooks/assets/new-relic-logo.png)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zodiacfireworks/newrelic-playground/HEAD)
+
 # New Relic Playground
 
 This repository contains a sample notebook and some required files to get you started with the New Relic GraphQL API.
+
 
 ## Getting Started
 
@@ -36,3 +41,16 @@ poetry run jupyter lab --ContentsManager.allow_hidden=True
 
 - [New Relic GraphQL API](https://docs.newrelic.com/docs/apis/nerdgraph/get-started/introduction-new-relic-nerdgraph/)
 - [New Relic GraphQL Explorer](https://api.newrelic.com/graphiql)
+
+## Notes
+
+On MyBinder yo can't see the `.env` file, so you'll need to replace the `NRAK-your-new-relic-user-key` with your own API key using `sed`.
+
+```bash
+cp .env.template .env
+sed -i 's/NRAK-your-new-relic-user-key/YOUR-REAL-NEWRELIC-USER-KEY/g' .env
+```
+
+## License
+
+This project is licensed under the terms of the [MIT license](/LICENSE).
