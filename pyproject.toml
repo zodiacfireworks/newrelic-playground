@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "newrelic-playground"
+version = "0.1.0"
+description = ""
+authors = ["martin.vuelta@gmail.com <martin.vuelta@gmail.com>"]
+readme = "README.md"
+packages = [{include = "newrelic_playground"}]
+
+[tool.poetry.dependencies]
+python = "3.9.16"
+jupyterlab = "^3.6.2"
+jupyter-book = "^0.15.1"
+requests = "^2.28.2"
+python-dotenv = "^1.0.0"
+sgqlc = "^16.1"
+pandas = "^1.5.3"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
