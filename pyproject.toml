@@ -10,7 +10,7 @@ packages = [{include = "newrelic_playground"}]
 python = "3.9.16"
 jupyterlab = "^3.6.2"
 jupyter-book = "^0.15.1"
-requests = "^2.28.2"
+requests = "^2.31.0"
 python-dotenv = "^1.0.0"
 sgqlc = "^16.1"
 pandas = "^1.5.3"
